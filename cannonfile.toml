@@ -1,0 +1,68 @@
+name="usdc"
+version="2.1"
+
+[setting.tokenName]
+defaultValue="USD Coin"
+
+[setting.tokenSymbol]
+defaultValue="USDC"
+
+[setting.tokenCurrency]
+defaultValue="USD"
+
+[setting.tokenDecimals]
+defaultValue="6"
+
+[setting.newPauser]
+defaultValue="0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266"
+
+[setting.newBlacklister]
+defaultValue="0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266"
+
+[setting.newOwner]
+defaultValue="0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266"
+
+[setting.lostAndFound]
+defaultValue="0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266"
+
+[setting.minterManager]
+defaultValue="0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266"
+
+[contract.MasterMinter]
+artifact="MasterMinter"
+params=["<%= settings.minterManager %>"]
+
+[contract.FiatTokenV2_1]
+artifact="FiatTokenV2_1"
+depends = ['contract.MasterMinter']
+
+[contract.FiatTokenProxy]
+artifact="FiatTokenProxy"
+params = ["<%= contracts.FiatTokenV2_1.address %"]
+
+[invoke.initialize]
+target="contract.FiatTokenProxy"
+func = "initialize"
+params = [
+"<%= settings.tokenName %>",
+"<%= settings.tokenSymbol %>",
+"<%= settings.tokenCurrency %>",
+"<%= settings.tokenDecimals %>",
+"<%= contracts.MasterMinter.address %>",
+"<%= settings.newPauser %>",
+"<%= settings.newBlacklister %>",
+"<%= settings.newOwner %>"
+]
+depends = ['contract.FiatTokenProxy']
+
+[invoke.initializeV2]
+target="contract.FiatTokenProxy"
+func = "initializeV2"
+params = ['<%= settings.newName =>']
+depends = ['invoke.initialize']
+
+[invoke.initializeV2_1]
+target="contract.FiatTokenProxy"
+func = "initializeV2_1"
+params = ['<%= settings.lostAndFound =>']
+depends = ['invoke.initializeV2']

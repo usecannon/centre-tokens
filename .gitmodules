@@ -1,3 +1,7 @@
 [submodule "echidna"]
 	path = echidna
 	url = git@github.com:trailofbits/echidna.git
+[submodule "lib/openzeppelin-contracts"]
+	path = lib/openzeppelin-contracts
+	url = https://github.com/OpenZeppelin/openzeppelin-contracts
+	branch = v4.8.1

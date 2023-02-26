@@ -30,20 +30,22 @@ defaultValue="0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266"
 
 [contract.MasterMinter]
 artifact="MasterMinter"
-params=["<%= settings.minterManager %>"]
+args=["<%= settings.minterManager %>"]
 
 [contract.FiatTokenV2_1]
 artifact="FiatTokenV2_1"
-depends = ['contract.MasterMinter']
+depends=['contract.MasterMinter']
 
 [contract.FiatTokenProxy]
 artifact="FiatTokenProxy"
-params = ["<%= contracts.FiatTokenV2_1.address %"]
+args=["<%= contracts.FiatTokenV2_1.address %>"]
+abiOf=["FiatTokenV2_1"]
+depends=['contract.FiatTokenV2_1']
 
 [invoke.initialize]
-target="contract.FiatTokenProxy"
-func = "initialize"
-params = [
+target=["FiatTokenProxy"]
+func="initialize"
+args=[
 "<%= settings.tokenName %>",
 "<%= settings.tokenSymbol %>",
 "<%= settings.tokenCurrency %>",
@@ -53,16 +55,16 @@ params = [
 "<%= settings.newBlacklister %>",
 "<%= settings.newOwner %>"
 ]
-depends = ['contract.FiatTokenProxy']
+depends=['contract.FiatTokenProxy']
 
 [invoke.initializeV2]
-target="contract.FiatTokenProxy"
-func = "initializeV2"
-params = ['<%= settings.newName =>']
-depends = ['invoke.initialize']
+target=["FiatTokenProxy"]
+func="initializeV2"
+args=['<%= settings.newName =>']
+depends=['invoke.initialize']
 
 [invoke.initializeV2_1]
-target="contract.FiatTokenProxy"
-func = "initializeV2_1"
-params = ['<%= settings.lostAndFound =>']
-depends = ['invoke.initializeV2']
+target=["FiatTokenProxy"]
+func="initializeV2_1"
+args=['<%= settings.lostAndFound %>']
+depends=['invoke.initializeV2']

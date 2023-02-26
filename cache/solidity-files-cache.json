@@ -1,0 +1,1989 @@
+{
+  "_format": "ethers-rs-sol-cache-3",
+  "paths": {
+    "artifacts": "out",
+    "build_infos": "out/build-info",
+    "sources": "contracts",
+    "tests": "test",
+    "scripts": "script",
+    "libraries": [
+      "lib"
+    ]
+  },
+  "files": {
+    "contracts/Migrations.sol": {
+      "lastModificationDate": 1677447385043,
+      "contentHash": "46afe475d073852e8b47b811e2948e48",
+      "sourceName": "contracts/Migrations.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "=0.6.12",
+      "artifacts": {
+        "Migrations": {
+          "0.6.12+commit.27d51765.Darwin.appleclang": "Migrations.sol/Migrations.json"
+        }
+      }
+    },
+    "contracts/minting/Controller.sol": {
+      "lastModificationDate": 1677447385043,
+      "contentHash": "221099bbf9b6bd964518e6838283d7f5",
+      "sourceName": "contracts/minting/Controller.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "contracts/v1/Ownable.sol"
+      ],
+      "versionRequirement": "=0.6.12",
+      "artifacts": {
+        "Controller": {
+          "0.6.12+commit.27d51765.Darwin.appleclang": "Controller.sol/Controller.json"
+        }
+      }
+    },
+    "contracts/minting/MasterMinter.sol": {
+      "lastModificationDate": 1677447385044,
+      "contentHash": "7122217942219d0b1d3ffa005b20f644",
+      "sourceName": "contracts/minting/MasterMinter.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "contracts/minting/Controller.sol",
+        "contracts/minting/MintController.sol",
+        "contracts/minting/MinterManagementInterface.sol",
+        "contracts/v1/Ownable.sol",
+        "lib/openzeppelin-contracts/contracts/math/SafeMath.sol"
+      ],
+      "versionRequirement": "=0.6.12",
+      "artifacts": {
+        "MasterMinter": {
+          "0.6.12+commit.27d51765.Darwin.appleclang": "MasterMinter.sol/MasterMinter.json"
+        }
+      }
+    },
+    "contracts/minting/MintController.sol": {
+      "lastModificationDate": 1677451064012,
+      "contentHash": "2b10b2290e2f07420a5c26ffda34adcc",
+      "sourceName": "contracts/minting/MintController.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "contracts/minting/Controller.sol",
+        "contracts/minting/MinterManagementInterface.sol",
+        "contracts/v1/Ownable.sol",
+        "lib/openzeppelin-contracts/contracts/math/SafeMath.sol"
+      ],
+      "versionRequirement": "=0.6.12",
+      "artifacts": {
+        "MintController": {
+          "0.6.12+commit.27d51765.Darwin.appleclang": "MintController.sol/MintController.json"
+        }
+      }
+    },
+    "contracts/minting/MinterManagementInterface.sol": {
+      "lastModificationDate": 1677447385044,
+      "contentHash": "94fa3555f0d4c682922013677e24957c",
+      "sourceName": "contracts/minting/MinterManagementInterface.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "=0.6.12",
+      "artifacts": {
+        "MinterManagementInterface": {
+          "0.6.12+commit.27d51765.Darwin.appleclang": "MinterManagementInterface.sol/MinterManagementInterface.json"
+        }
+      }
+    },
+    "contracts/test/ContractThatCallsPublicFunctions.sol": {
+      "lastModificationDate": 1677447385044,
+      "contentHash": "65945566d079007fda02718a3a4b3748",
+      "sourceName": "contracts/test/ContractThatCallsPublicFunctions.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "contracts/test/ContractWithPublicFunctions.sol"
+      ],
+      "versionRequirement": "=0.6.12",
+      "artifacts": {
+        "ContractThatCallsPublicFunctions": {
+          "0.6.12+commit.27d51765.Darwin.appleclang": "ContractThatCallsPublicFunctions.sol/ContractThatCallsPublicFunctions.json"
+        }
+      }
+    },
+    "contracts/test/ContractThatReverts.sol": {
+      "lastModificationDate": 1677447385045,
+      "contentHash": "dbeb30484dfa62d02a6a8c994477ccf4",
+      "sourceName": "contracts/test/ContractThatReverts.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "=0.6.12",
+      "artifacts": {
+        "ContractThatReverts": {
+          "0.6.12+commit.27d51765.Darwin.appleclang": "ContractThatReverts.sol/ContractThatReverts.json"
+        }
+      }
+    },
+    "contracts/test/ContractWithExternalFunctions.sol": {
+      "lastModificationDate": 1677447385045,
+      "contentHash": "18d7bd39ab8286dec46575d0c09a1560",
+      "sourceName": "contracts/test/ContractWithExternalFunctions.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "=0.6.12",
+      "artifacts": {
+        "ContractWithExternalFunctions": {
+          "0.6.12+commit.27d51765.Darwin.appleclang": "ContractWithExternalFunctions.sol/ContractWithExternalFunctions.json"
+        }
+      }
+    },
+    "contracts/test/ContractWithPublicFunctions.sol": {
+      "lastModificationDate": 1677447385045,
+      "contentHash": "a29d31cd61e0f2799812a6f3afe9498a",
+      "sourceName": "contracts/test/ContractWithPublicFunctions.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "=0.6.12",
+      "artifacts": {
+        "ContractWithPublicFunctions": {
+          "0.6.12+commit.27d51765.Darwin.appleclang": "ContractWithPublicFunctions.sol/ContractWithPublicFunctions.json"
+        }
+      }
+    },
+    "contracts/test/DummyERC20.sol": {
+      "lastModificationDate": 1677451063889,
+      "contentHash": "57f74a33c6ae84f7a082a147bcb04628",
+      "sourceName": "contracts/test/DummyERC20.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/openzeppelin-contracts/contracts/GSN/Context.sol",
+        "lib/openzeppelin-contracts/contracts/math/SafeMath.sol",
+        "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol",
+        "lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol",
+        "lib/openzeppelin-contracts/contracts/utils/Address.sol"
+      ],
+      "versionRequirement": "=0.6.12",
+      "artifacts": {
+        "DummyERC20": {
+          "0.6.12+commit.27d51765.Darwin.appleclang": "DummyERC20.sol/DummyERC20.json"
+        }
+      }
+    },
+    "contracts/test/ECRecoverTest.sol": {
+      "lastModificationDate": 1677447385045,
+      "contentHash": "8ec0050156c7a69295f10285412084d4",
+      "sourceName": "contracts/test/ECRecoverTest.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "contracts/util/ECRecover.sol"
+      ],
+      "versionRequirement": "=0.6.12",
+      "artifacts": {
+        "ECRecoverTest": {
+          "0.6.12+commit.27d51765.Darwin.appleclang": "ECRecoverTest.sol/ECRecoverTest.json"
+        }
+      }
+    },
+    "contracts/test/EIP712Test.sol": {
+      "lastModificationDate": 1677447385045,
+      "contentHash": "dd095b01db766f424dccebf80a42b061",
+      "sourceName": "contracts/test/EIP712Test.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "contracts/util/ECRecover.sol",
+        "contracts/util/EIP712.sol"
+      ],
+      "versionRequirement": "=0.6.12",
+      "artifacts": {
+        "EIP712Test": {
+          "0.6.12+commit.27d51765.Darwin.appleclang": "EIP712Test.sol/EIP712Test.json"
+        }
+      }
+    },
+    "contracts/test/UpgradedFiatToken.sol": {
+      "lastModificationDate": 1677447385045,
+      "contentHash": "96851171166eb629b0b3a0dfe5aa803c",
+      "sourceName": "contracts/test/UpgradedFiatToken.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "contracts/v1/AbstractFiatTokenV1.sol",
+        "contracts/v1/Blacklistable.sol",
+        "contracts/v1/FiatTokenV1.sol",
+        "contracts/v1/Ownable.sol",
+        "contracts/v1/Pausable.sol",
+        "lib/openzeppelin-contracts/contracts/math/SafeMath.sol",
+        "lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol"
+      ],
+      "versionRequirement": "=0.6.12",
+      "artifacts": {
+        "UpgradedFiatToken": {
+          "0.6.12+commit.27d51765.Darwin.appleclang": "UpgradedFiatToken.sol/UpgradedFiatToken.json"
+        }
+      }
+    },
+    "contracts/test/UpgradedFiatTokenNewFieldsNewLogicTest.sol": {
+      "lastModificationDate": 1677447385046,
+      "contentHash": "3cffe7d7fe7ec634e6e65f3fdab29363",
+      "sourceName": "contracts/test/UpgradedFiatTokenNewFieldsNewLogicTest.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "contracts/v1/AbstractFiatTokenV1.sol",
+        "contracts/v1/Blacklistable.sol",
+        "contracts/v1/FiatTokenV1.sol",
+        "contracts/v1/Ownable.sol",
+        "contracts/v1/Pausable.sol",
+        "lib/openzeppelin-contracts/contracts/math/SafeMath.sol",
+        "lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol"
+      ],
+      "versionRequirement": "=0.6.12",
+      "artifacts": {
+        "UpgradedFiatTokenNewFieldsNewLogicTest": {
+          "0.6.12+commit.27d51765.Darwin.appleclang": "UpgradedFiatTokenNewFieldsNewLogicTest.sol/UpgradedFiatTokenNewFieldsNewLogicTest.json"
+        }
+      }
+    },
+    "contracts/test/UpgradedFiatTokenNewFieldsTest.sol": {
+      "lastModificationDate": 1677447385046,
+      "contentHash": "98e25babab387a14b004f78ed0b9f8f0",
+      "sourceName": "contracts/test/UpgradedFiatTokenNewFieldsTest.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "contracts/v1/AbstractFiatTokenV1.sol",
+        "contracts/v1/Blacklistable.sol",
+        "contracts/v1/FiatTokenV1.sol",
+        "contracts/v1/Ownable.sol",
+        "contracts/v1/Pausable.sol",
+        "lib/openzeppelin-contracts/contracts/math/SafeMath.sol",
+        "lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol"
+      ],
+      "versionRequirement": "=0.6.12",
+      "artifacts": {
+        "UpgradedFiatTokenNewFieldsTest": {
+          "0.6.12+commit.27d51765.Darwin.appleclang": "UpgradedFiatTokenNewFieldsTest.sol/UpgradedFiatTokenNewFieldsTest.json"
+        }
+      }
+    },
+    "contracts/upgradeability/AdminUpgradeabilityProxy.sol": {
+      "lastModificationDate": 1677447385046,
+      "contentHash": "49b4ecec4b731f1f6441f1959a6b57ae",
+      "sourceName": "contracts/upgradeability/AdminUpgradeabilityProxy.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "contracts/upgradeability/Proxy.sol",
+        "contracts/upgradeability/UpgradeabilityProxy.sol",
+        "lib/openzeppelin-contracts/contracts/utils/Address.sol"
+      ],
+      "versionRequirement": "=0.6.12",
+      "artifacts": {
+        "AdminUpgradeabilityProxy": {
+          "0.6.12+commit.27d51765.Darwin.appleclang": "AdminUpgradeabilityProxy.sol/AdminUpgradeabilityProxy.json"
+        }
+      }
+    },
+    "contracts/upgradeability/Proxy.sol": {
+      "lastModificationDate": 1677447385046,
+      "contentHash": "e20991a47bc9a6471203c96b054b5929",
+      "sourceName": "contracts/upgradeability/Proxy.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "=0.6.12",
+      "artifacts": {
+        "Proxy": {
+          "0.6.12+commit.27d51765.Darwin.appleclang": "Proxy.sol/Proxy.json"
+        }
+      }
+    },
+    "contracts/upgradeability/UpgradeabilityProxy.sol": {
+      "lastModificationDate": 1677451063872,
+      "contentHash": "6a804261de07b3db2407a0ec95c2a6b4",
+      "sourceName": "contracts/upgradeability/UpgradeabilityProxy.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "contracts/upgradeability/Proxy.sol",
+        "lib/openzeppelin-contracts/contracts/utils/Address.sol"
+      ],
+      "versionRequirement": "=0.6.12",
+      "artifacts": {
+        "UpgradeabilityProxy": {
+          "0.6.12+commit.27d51765.Darwin.appleclang": "UpgradeabilityProxy.sol/UpgradeabilityProxy.json"
+        }
+      }
+    },
+    "contracts/util/ECRecover.sol": {
+      "lastModificationDate": 1677447385046,
+      "contentHash": "123a49b442926e1fc39f14042c15662b",
+      "sourceName": "contracts/util/ECRecover.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "=0.6.12",
+      "artifacts": {
+        "ECRecover": {
+          "0.6.12+commit.27d51765.Darwin.appleclang": "ECRecover.sol/ECRecover.json"
+        }
+      }
+    },
+    "contracts/util/EIP712.sol": {
+      "lastModificationDate": 1677447385047,
+      "contentHash": "b7e6dd656aea70fa18c45c36af05d3c5",
+      "sourceName": "contracts/util/EIP712.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "contracts/util/ECRecover.sol"
+      ],
+      "versionRequirement": "=0.6.12",
+      "artifacts": {
+        "EIP712": {
+          "0.6.12+commit.27d51765.Darwin.appleclang": "EIP712.sol/EIP712.json"
+        }
+      }
+    },
+    "contracts/v1/AbstractFiatTokenV1.sol": {
+      "lastModificationDate": 1677451063949,
+      "contentHash": "7dd8a8324b73368652637fe81f12142d",
+      "sourceName": "contracts/v1/AbstractFiatTokenV1.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol"
+      ],
+      "versionRequirement": "=0.6.12",
+      "artifacts": {
+        "AbstractFiatTokenV1": {
+          "0.6.12+commit.27d51765.Darwin.appleclang": "AbstractFiatTokenV1.sol/AbstractFiatTokenV1.json"
+        }
+      }
+    },
+    "contracts/v1/Blacklistable.sol": {
+      "lastModificationDate": 1677447385048,
+      "contentHash": "436455ab4ebf3e7494aa00cd91e65bf0",
+      "sourceName": "contracts/v1/Blacklistable.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "contracts/v1/Ownable.sol"
+      ],
+      "versionRequirement": "=0.6.12",
+      "artifacts": {
+        "Blacklistable": {
+          "0.6.12+commit.27d51765.Darwin.appleclang": "Blacklistable.sol/Blacklistable.json"
+        }
+      }
+    },
+    "contracts/v1/FiatTokenProxy.sol": {
+      "lastModificationDate": 1677447385048,
+      "contentHash": "18ff4b0c29d663f440a327c1e65b71b9",
+      "sourceName": "contracts/v1/FiatTokenProxy.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "contracts/upgradeability/AdminUpgradeabilityProxy.sol",
+        "contracts/upgradeability/Proxy.sol",
+        "contracts/upgradeability/UpgradeabilityProxy.sol",
+        "lib/openzeppelin-contracts/contracts/utils/Address.sol"
+      ],
+      "versionRequirement": "=0.6.12",
+      "artifacts": {
+        "FiatTokenProxy": {
+          "0.6.12+commit.27d51765.Darwin.appleclang": "FiatTokenProxy.sol/FiatTokenProxy.json"
+        }
+      }
+    },
+    "contracts/v1/FiatTokenV1.sol": {
+      "lastModificationDate": 1677451064161,
+      "contentHash": "a8d3470126f0488d5723519bcd1b1f66",
+      "sourceName": "contracts/v1/FiatTokenV1.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "contracts/v1/AbstractFiatTokenV1.sol",
+        "contracts/v1/Blacklistable.sol",
+        "contracts/v1/Ownable.sol",
+        "contracts/v1/Pausable.sol",
+        "lib/openzeppelin-contracts/contracts/math/SafeMath.sol",
+        "lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol"
+      ],
+      "versionRequirement": "=0.6.12",
+      "artifacts": {
+        "FiatTokenV1": {
+          "0.6.12+commit.27d51765.Darwin.appleclang": "FiatTokenV1.sol/FiatTokenV1.json"
+        }
+      }
+    },
+    "contracts/v1/Ownable.sol": {
+      "lastModificationDate": 1677447385048,
+      "contentHash": "9d89746baa96cd2f2b6edd427494e021",
+      "sourceName": "contracts/v1/Ownable.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "=0.6.12",
+      "artifacts": {
+        "Ownable": {
+          "0.6.12+commit.27d51765.Darwin.appleclang": "Ownable.sol/Ownable.json"
+        }
+      }
+    },
+    "contracts/v1/Pausable.sol": {
+      "lastModificationDate": 1677447385048,
+      "contentHash": "de442ed6884842a17f056aa643639ec3",
+      "sourceName": "contracts/v1/Pausable.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "contracts/v1/Ownable.sol"
+      ],
+      "versionRequirement": "=0.6.12",
+      "artifacts": {
+        "Pausable": {
+          "0.6.12+commit.27d51765.Darwin.appleclang": "Pausable.sol/Pausable.json"
+        }
+      }
+    },
+    "contracts/v1.1/FiatTokenV1_1.sol": {
+      "lastModificationDate": 1677447385047,
+      "contentHash": "aad13e96f8472d8f783b6ede63bfdc66",
+      "sourceName": "contracts/v1.1/FiatTokenV1_1.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "contracts/v1/AbstractFiatTokenV1.sol",
+        "contracts/v1/Blacklistable.sol",
+        "contracts/v1/FiatTokenV1.sol",
+        "contracts/v1/Ownable.sol",
+        "contracts/v1/Pausable.sol",
+        "contracts/v1.1/Rescuable.sol",
+        "lib/openzeppelin-contracts/contracts/math/SafeMath.sol",
+        "lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol",
+        "lib/openzeppelin-contracts/contracts/token/ERC20/SafeERC20.sol",
+        "lib/openzeppelin-contracts/contracts/utils/Address.sol"
+      ],
+      "versionRequirement": "=0.6.12",
+      "artifacts": {
+        "FiatTokenV1_1": {
+          "0.6.12+commit.27d51765.Darwin.appleclang": "FiatTokenV1_1.sol/FiatTokenV1_1.json"
+        }
+      }
+    },
+    "contracts/v1.1/Rescuable.sol": {
+      "lastModificationDate": 1677451063938,
+      "contentHash": "83bfe2cc9ca31d8e043d29b093f83714",
+      "sourceName": "contracts/v1.1/Rescuable.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "contracts/v1/Ownable.sol",
+        "lib/openzeppelin-contracts/contracts/math/SafeMath.sol",
+        "lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol",
+        "lib/openzeppelin-contracts/contracts/token/ERC20/SafeERC20.sol",
+        "lib/openzeppelin-contracts/contracts/utils/Address.sol"
+      ],
+      "versionRequirement": "=0.6.12",
+      "artifacts": {
+        "Rescuable": {
+          "0.6.12+commit.27d51765.Darwin.appleclang": "Rescuable.sol/Rescuable.json"
+        }
+      }
+    },
+    "contracts/v2/AbstractFiatTokenV2.sol": {
+      "lastModificationDate": 1677447385048,
+      "contentHash": "3ce18a31ffa934991fd5b8ee9bef37a4",
+      "sourceName": "contracts/v2/AbstractFiatTokenV2.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "contracts/v1/AbstractFiatTokenV1.sol",
+        "lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol"
+      ],
+      "versionRequirement": "=0.6.12",
+      "artifacts": {
+        "AbstractFiatTokenV2": {
+          "0.6.12+commit.27d51765.Darwin.appleclang": "AbstractFiatTokenV2.sol/AbstractFiatTokenV2.json"
+        }
+      }
+    },
+    "contracts/v2/EIP2612.sol": {
+      "lastModificationDate": 1677447385049,
+      "contentHash": "b0972fbed501e9020a9805c3516f83f7",
+      "sourceName": "contracts/v2/EIP2612.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "contracts/util/ECRecover.sol",
+        "contracts/util/EIP712.sol",
+        "contracts/v1/AbstractFiatTokenV1.sol",
+        "contracts/v2/AbstractFiatTokenV2.sol",
+        "contracts/v2/EIP712Domain.sol",
+        "lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol"
+      ],
+      "versionRequirement": "=0.6.12",
+      "artifacts": {
+        "EIP2612": {
+          "0.6.12+commit.27d51765.Darwin.appleclang": "EIP2612.sol/EIP2612.json"
+        }
+      }
+    },
+    "contracts/v2/EIP3009.sol": {
+      "lastModificationDate": 1677447385049,
+      "contentHash": "2460b0caf66d6c8296aeca4d871bcce2",
+      "sourceName": "contracts/v2/EIP3009.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "contracts/util/ECRecover.sol",
+        "contracts/util/EIP712.sol",
+        "contracts/v1/AbstractFiatTokenV1.sol",
+        "contracts/v2/AbstractFiatTokenV2.sol",
+        "contracts/v2/EIP712Domain.sol",
+        "lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol"
+      ],
+      "versionRequirement": "=0.6.12",
+      "artifacts": {
+        "EIP3009": {
+          "0.6.12+commit.27d51765.Darwin.appleclang": "EIP3009.sol/EIP3009.json"
+        }
+      }
+    },
+    "contracts/v2/EIP712Domain.sol": {
+      "lastModificationDate": 1677447385049,
+      "contentHash": "ebc4e925f43d466e7e636b3892dd95b7",
+      "sourceName": "contracts/v2/EIP712Domain.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "=0.6.12",
+      "artifacts": {
+        "EIP712Domain": {
+          "0.6.12+commit.27d51765.Darwin.appleclang": "EIP712Domain.sol/EIP712Domain.json"
+        }
+      }
+    },
+    "contracts/v2/FiatTokenUtil.sol": {
+      "lastModificationDate": 1677447385049,
+      "contentHash": "51298a17c3a4f1edf1117862597933ad",
+      "sourceName": "contracts/v2/FiatTokenUtil.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "=0.6.12",
+      "artifacts": {
+        "FiatTokenUtil": {
+          "0.6.12+commit.27d51765.Darwin.appleclang": "FiatTokenUtil.sol/FiatTokenUtil.json"
+        }
+      }
+    },
+    "contracts/v2/FiatTokenV2.sol": {
+      "lastModificationDate": 1677447385049,
+      "contentHash": "81d0b951cccf8b43e4eca053aa012b5f",
+      "sourceName": "contracts/v2/FiatTokenV2.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "contracts/util/ECRecover.sol",
+        "contracts/util/EIP712.sol",
+        "contracts/v1/AbstractFiatTokenV1.sol",
+        "contracts/v1/Blacklistable.sol",
+        "contracts/v1/FiatTokenV1.sol",
+        "contracts/v1/Ownable.sol",
+        "contracts/v1/Pausable.sol",
+        "contracts/v1.1/FiatTokenV1_1.sol",
+        "contracts/v1.1/Rescuable.sol",
+        "contracts/v2/AbstractFiatTokenV2.sol",
+        "contracts/v2/EIP2612.sol",
+        "contracts/v2/EIP3009.sol",
+        "contracts/v2/EIP712Domain.sol",
+        "lib/openzeppelin-contracts/contracts/math/SafeMath.sol",
+        "lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol",
+        "lib/openzeppelin-contracts/contracts/token/ERC20/SafeERC20.sol",
+        "lib/openzeppelin-contracts/contracts/utils/Address.sol"
+      ],
+      "versionRequirement": "=0.6.12",
+      "artifacts": {
+        "FiatTokenV2": {
+          "0.6.12+commit.27d51765.Darwin.appleclang": "FiatTokenV2.sol/FiatTokenV2.json"
+        }
+      }
+    },
+    "contracts/v2/FiatTokenV2_1.sol": {
+      "lastModificationDate": 1677447385049,
+      "contentHash": "e5f3bfd8d435cd93b740b8c6237f9dd7",
+      "sourceName": "contracts/v2/FiatTokenV2_1.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "contracts/util/ECRecover.sol",
+        "contracts/util/EIP712.sol",
+        "contracts/v1/AbstractFiatTokenV1.sol",
+        "contracts/v1/Blacklistable.sol",
+        "contracts/v1/FiatTokenV1.sol",
+        "contracts/v1/Ownable.sol",
+        "contracts/v1/Pausable.sol",
+        "contracts/v1.1/FiatTokenV1_1.sol",
+        "contracts/v1.1/Rescuable.sol",
+        "contracts/v2/AbstractFiatTokenV2.sol",
+        "contracts/v2/EIP2612.sol",
+        "contracts/v2/EIP3009.sol",
+        "contracts/v2/EIP712Domain.sol",
+        "contracts/v2/FiatTokenV2.sol",
+        "lib/openzeppelin-contracts/contracts/math/SafeMath.sol",
+        "lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol",
+        "lib/openzeppelin-contracts/contracts/token/ERC20/SafeERC20.sol",
+        "lib/openzeppelin-contracts/contracts/utils/Address.sol"
+      ],
+      "versionRequirement": "=0.6.12",
+      "artifacts": {
+        "FiatTokenV2_1": {
+          "0.6.12+commit.27d51765.Darwin.appleclang": "FiatTokenV2_1.sol/FiatTokenV2_1.json"
+        }
+      }
+    },
+    "contracts/v2/upgrader/V2Upgrader.sol": {
+      "lastModificationDate": 1677451064363,
+      "contentHash": "4d21849c25ec143e4fd2f598e94c798d",
+      "sourceName": "contracts/v2/upgrader/V2Upgrader.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "contracts/upgradeability/AdminUpgradeabilityProxy.sol",
+        "contracts/upgradeability/Proxy.sol",
+        "contracts/upgradeability/UpgradeabilityProxy.sol",
+        "contracts/util/ECRecover.sol",
+        "contracts/util/EIP712.sol",
+        "contracts/v1/AbstractFiatTokenV1.sol",
+        "contracts/v1/Blacklistable.sol",
+        "contracts/v1/FiatTokenProxy.sol",
+        "contracts/v1/FiatTokenV1.sol",
+        "contracts/v1/Ownable.sol",
+        "contracts/v1/Pausable.sol",
+        "contracts/v1.1/FiatTokenV1_1.sol",
+        "contracts/v1.1/Rescuable.sol",
+        "contracts/v2/AbstractFiatTokenV2.sol",
+        "contracts/v2/EIP2612.sol",
+        "contracts/v2/EIP3009.sol",
+        "contracts/v2/EIP712Domain.sol",
+        "contracts/v2/FiatTokenV2.sol",
+        "contracts/v2/upgrader/V2UpgraderHelper.sol",
+        "lib/openzeppelin-contracts/contracts/math/SafeMath.sol",
+        "lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol",
+        "lib/openzeppelin-contracts/contracts/token/ERC20/SafeERC20.sol",
+        "lib/openzeppelin-contracts/contracts/utils/Address.sol"
+      ],
+      "versionRequirement": "=0.6.12",
+      "artifacts": {
+        "V2Upgrader": {
+          "0.6.12+commit.27d51765.Darwin.appleclang": "V2Upgrader.sol/V2Upgrader.json"
+        }
+      }
+    },
+    "contracts/v2/upgrader/V2UpgraderHelper.sol": {
+      "lastModificationDate": 1677447385050,
+      "contentHash": "ec8f3ece0447deb6cedcfb92171430fc",
+      "sourceName": "contracts/v2/upgrader/V2UpgraderHelper.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "contracts/v1/AbstractFiatTokenV1.sol",
+        "contracts/v1/Blacklistable.sol",
+        "contracts/v1/FiatTokenV1.sol",
+        "contracts/v1/Ownable.sol",
+        "contracts/v1/Pausable.sol",
+        "lib/openzeppelin-contracts/contracts/math/SafeMath.sol",
+        "lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol"
+      ],
+      "versionRequirement": "=0.6.12",
+      "artifacts": {
+        "V2UpgraderHelper": {
+          "0.6.12+commit.27d51765.Darwin.appleclang": "V2UpgraderHelper.sol/V2UpgraderHelper.json"
+        }
+      }
+    },
+    "contracts/v2/upgrader/V2_1Upgrader.sol": {
+      "lastModificationDate": 1677451064465,
+      "contentHash": "4298022faac1bb5a8b63cc6c082d1fcd",
+      "sourceName": "contracts/v2/upgrader/V2_1Upgrader.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "contracts/upgradeability/AdminUpgradeabilityProxy.sol",
+        "contracts/upgradeability/Proxy.sol",
+        "contracts/upgradeability/UpgradeabilityProxy.sol",
+        "contracts/util/ECRecover.sol",
+        "contracts/util/EIP712.sol",
+        "contracts/v1/AbstractFiatTokenV1.sol",
+        "contracts/v1/Blacklistable.sol",
+        "contracts/v1/FiatTokenProxy.sol",
+        "contracts/v1/FiatTokenV1.sol",
+        "contracts/v1/Ownable.sol",
+        "contracts/v1/Pausable.sol",
+        "contracts/v1.1/FiatTokenV1_1.sol",
+        "contracts/v1.1/Rescuable.sol",
+        "contracts/v2/AbstractFiatTokenV2.sol",
+        "contracts/v2/EIP2612.sol",
+        "contracts/v2/EIP3009.sol",
+        "contracts/v2/EIP712Domain.sol",
+        "contracts/v2/FiatTokenV2.sol",
+        "contracts/v2/FiatTokenV2_1.sol",
+        "contracts/v2/upgrader/V2UpgraderHelper.sol",
+        "lib/openzeppelin-contracts/contracts/math/SafeMath.sol",
+        "lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol",
+        "lib/openzeppelin-contracts/contracts/token/ERC20/SafeERC20.sol",
+        "lib/openzeppelin-contracts/contracts/utils/Address.sol"
+      ],
+      "versionRequirement": "=0.6.12",
+      "artifacts": {
+        "V2_1Upgrader": {
+          "0.6.12+commit.27d51765.Darwin.appleclang": "V2_1Upgrader.sol/V2_1Upgrader.json"
+        }
+      }
+    },
+    "lib/openzeppelin-contracts/contracts/GSN/Context.sol": {
+      "lastModificationDate": 1677450934793,
+      "contentHash": "af1b36323856d0d1550abc7f878a8208",
+      "sourceName": "lib/openzeppelin-contracts/contracts/GSN/Context.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.6.0",
+      "artifacts": {
+        "Context": {
+          "0.6.12+commit.27d51765.Darwin.appleclang": "Context.sol/Context.json"
+        }
+      }
+    },
+    "lib/openzeppelin-contracts/contracts/math/SafeMath.sol": {
+      "lastModificationDate": 1677450934799,
+      "contentHash": "168f50d923a8f64094d8e761ca2e5fe6",
+      "sourceName": "lib/openzeppelin-contracts/contracts/math/SafeMath.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.6.0",
+      "artifacts": {
+        "SafeMath": {
+          "0.6.12+commit.27d51765.Darwin.appleclang": "contracts/math/SafeMath.sol/SafeMath.json"
+        }
+      }
+    },
+    "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol": {
+      "lastModificationDate": 1677450934819,
+      "contentHash": "84e7212989184a404420e487dc9bf91d",
+      "sourceName": "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/openzeppelin-contracts/contracts/GSN/Context.sol",
+        "lib/openzeppelin-contracts/contracts/math/SafeMath.sol",
+        "lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol",
+        "lib/openzeppelin-contracts/contracts/utils/Address.sol"
+      ],
+      "versionRequirement": "^0.6.0",
+      "artifacts": {
+        "ERC20": {
+          "0.6.12+commit.27d51765.Darwin.appleclang": "token/ERC20/ERC20.sol/ERC20.json"
+        }
+      }
+    },
+    "lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol": {
+      "lastModificationDate": 1677450934820,
+      "contentHash": "95e76adf687e1a31a4b8ece4e9bb757a",
+      "sourceName": "lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.6.0",
+      "artifacts": {
+        "IERC20": {
+          "0.6.12+commit.27d51765.Darwin.appleclang": "token/ERC20/IERC20.sol/IERC20.json"
+        }
+      }
+    },
+    "lib/openzeppelin-contracts/contracts/token/ERC20/SafeERC20.sol": {
+      "lastModificationDate": 1677450934820,
+      "contentHash": "9ad439345c515e1367ef104675b36e7b",
+      "sourceName": "lib/openzeppelin-contracts/contracts/token/ERC20/SafeERC20.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/openzeppelin-contracts/contracts/math/SafeMath.sol",
+        "lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol",
+        "lib/openzeppelin-contracts/contracts/utils/Address.sol"
+      ],
+      "versionRequirement": "^0.6.0",
+      "artifacts": {
+        "SafeERC20": {
+          "0.6.12+commit.27d51765.Darwin.appleclang": "token/ERC20/SafeERC20.sol/SafeERC20.json"
+        }
+      }
+    },
+    "lib/openzeppelin-contracts/contracts/utils/Address.sol": {
+      "lastModificationDate": 1677450934827,
+      "contentHash": "123f93732b38fa4a14febeab42234999",
+      "sourceName": "lib/openzeppelin-contracts/contracts/utils/Address.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.6.2",
+      "artifacts": {
+        "Address": {
+          "0.6.12+commit.27d51765.Darwin.appleclang": "contracts/utils/Address.sol/Address.json"
+        }
+      }
+    }
+  }
+}
